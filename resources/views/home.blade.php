@@ -629,15 +629,16 @@
                   <div id="panel-11" class="panel panel-inverse">
                      <div class="panel-heading portlet-handler">常用系統</div>
                      <div class="panel-body">
-                        @foreach ($sidebars as $sidebar)
                         <ul class="about-links-item">
+                        @foreach ($sidebars as $sidebar)
+
                           <li>
                             <a href="#" title="{{ $sidebar['title'] }}">
                               {{ $sidebar['title'] }}
                             </a>
                           </li>
-                        </ul>
                         @endforeach
+                        </ul>
                      </div>
                   </div>
                   <!-- END panel-->
